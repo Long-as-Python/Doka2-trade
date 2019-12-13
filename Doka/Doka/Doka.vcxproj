@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{D4C59041-1D9D-4D60-8DAF-A654FF059757}</ProjectGuid>
+    <ProjectGuid>{830C7702-80C4-4DC8-A305-91B6FD674F6D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Doka2</RootNamespace>
+    <RootNamespace>Doka</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -147,7 +147,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Doka2.cpp" />
+    <ClCompile Include="Doka.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Clases.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
