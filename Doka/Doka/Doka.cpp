@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <windows.h>
 #include "Clases.h"
 using namespace std;
 
@@ -38,21 +39,21 @@ public:
 	int Speed;
 };
 
-class TeamPart : Player, Hero {
-public:
-	TeamPart() {};
-
-};
-
 class Session {
 public:
-	TeamPart* TeamRed = new TeamPart[5];
-	TeamPart* TeamBlue = new TeamPart[5];
+	/*TeamPart* TeamRed = new TeamPart[5];
+	TeamPart* TeamBlue = new TeamPart[5];*/
 	string Winner;
 };
 
+class PManager {
+
+};
+
+vector<Player*> Players;
+vector<Hero*> Heroes;
+
 void PlayerCreator() {
-	vector<Player*> Players;
 	for (int i = 0; i < 10; i++) {
 		Player* ReadyPlayerOne = new Player();
 		Players.push_back(ReadyPlayerOne);
@@ -63,11 +64,12 @@ void PlayerCreator() {
 		cout <<endl<<Players[i]->ID << endl
 			<< Players[i]->Name << endl
 			<< Players[i]->rank << endl;
+		Sleep(1200);
 	}
 }
 
+ 
 void HeroesCreator() {
-	vector<Hero*> Heroes;
 	for (int i = 0; i < 10; i++) {
 		Hero* MightyHero = new Hero();
 		Heroes.push_back(MightyHero);
@@ -77,20 +79,42 @@ void HeroesCreator() {
 		Heroes[i]->Speed = i;
 	}
 
-	for (int i = 0;i < 10;i++) {
+	/*for (int i = 0;i < 10;i++) {
 		cout << endl << Heroes[i]->Name << endl
 			<< Heroes[i]->HP << endl
 			<< Heroes[i]->Damage << endl
 			<< Heroes[i]->Speed << endl;
-	}
+	}*/
 }
+
+
+
+class TeamPart : Player, Hero {
+public:
+	TeamPart() {
+		/*vector<TeamPart*> team;
+		for (int i = 0; i < 10; i++) {
+			team[i] = Heroes[i];
+			for (int j = 0; j < 10;j++) {
+				team[j] = Players[j];
+			}
+		}*/
+	};
+
+};
+
+void PrintInfo() {
+
+}
+
 
 int main()
 {
     cout << "Hello World!\n";
 	PlayerCreator();
 	cout << endl;
+	goto hello;
 	HeroesCreator();
-
-	
+hello:
+	cout << "kek";
 }
