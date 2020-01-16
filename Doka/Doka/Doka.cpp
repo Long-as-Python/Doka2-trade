@@ -1,227 +1,127 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
-#include <vector>
 #include <windows.h>
 #include <Mmsystem.h>
 #include <algorithm>
 #include <random>
 #include <ctime>
 #pragma comment(lib, "Winmm.lib")
-#include "Clases.h"
+#include "Player.h"
+#include "Hero.h"
+#include "PManager.h"
+#include "HManager.h"
+#include "TeamPart.h"
+#include "Session.h"
+#include "SManager.h"
 using namespace std;
 
-string HeroNames[] = { "kek","maeve","Yuriu","Arthas","Furry","neko","loli","Lich King","Unity","Unreal Engine" };
-int HP[] = { 123, 132, 1, 542, 100, 142, 999, 1244, 156, 666 };
-int Dmg[] = { 666, 156, 1244, 999, 142, 100, 542, 1, 132, 123 };
-string PlayerNames[] = { "Valera","Petro","Yuriu","Jack","Misha","Onhii","Vasul","Ivan","Yana","John" };
+const int BLUE = 1;
+const int GREEN = 2;
+const int RED = 4;
+const int WHITE = 15;
 
-class Player {
-public:
-
-	Player() {
-		rank = 10000;
-		ID = count++;
-		PlayerName = "~~~";
-	}
-	string PlayerName;
-	static int count;
-	int rank;
-	int ID;
-	void	ChangeName(string name) {
-		PlayerName = name;
-	}
-};
-
-int Player::count = 0;
-
-class Hero {
-public:
-	Hero() {
-		Name = "~~~";
-		HP = 0;
-		Damage = 0;
-		Speed = 0;
-	};
-	string Name;
-	int HP;
-	int Damage;
-	int Speed;
-};
-
-
-auto rng = default_random_engine{};
-
-class PManager {
-public:
-	vector<Player*> Players;
-	PManager() {
-
-	};
-	void PlayerCreator() {
-		for (int i = 0; i < 10; i++) {
-			Player* ReadyPlayerOne = new Player();
-			Players.push_back(ReadyPlayerOne);
-			Players[i]->PlayerName = PlayerNames[i];
-		}
-		/*for (int i = 0;i < 10;i++) {
-			cout <<endl<<Players[i]->ID << endl
-				<< Players[i]->Name << endl
-				<< Players[i]->rank << endl;
-			Sleep(1200);
-		}*/
-	}
-	void AddPlayer() {
-		Player* ReadyPlayerOne = new Player();
-		Players.push_back(ReadyPlayerOne);
-		int i = Players.size();
-		Players[i]->ID = i;
-		cout << "######################" << endl
-			<< "# Input your Name:";
-		cin >> Players[i]->PlayerName;
-		cout << "######################" << endl;
-	}
-	void RemovePlayer(int ID) {
-		Players.erase(Players.begin() + ID);
-	}
-};
-
-class HManager {
-public:
-	vector<Hero*> Heroes;
-	HManager() {
-
-	};
-	void HeroesCreator() {
-		for (int i = 0; i < 10; i++) {
-			Hero* MightyHero = new Hero();
-			Heroes.push_back(MightyHero);
-			Heroes[i]->Damage = Dmg[i];
-			Heroes[i]->HP = HP[i];
-			Heroes[i]->Name = HeroNames[i];
-			Heroes[i]->Speed = i;
-		}
-
-		/*for (int i = 0;i < 10;i++) {
-			cout << endl << Heroes[i]->Name << endl
-				<< Heroes[i]->HP << endl
-				<< Heroes[i]->Damage << endl
-				<< Heroes[i]->Speed << endl;
-		}*/
-	}
-	void AddHero() {
-		Hero* MightyHero = new Hero();
-		Heroes.push_back(MightyHero);
-		int i = Heroes.size();
-		cout << "######################" << endl
-			<< "# Input new Hero Name:";
-		cin >> Heroes[i]->Name;
-		cout << "######################" << endl
-			<< "# Input your HP:";
-		cin >> Heroes[i]->HP;
-		cout << "######################" << endl
-			<< "# Input your DMG:";
-		cin >> Heroes[i]->Damage;
-		cout << "######################" << endl;
-	}
-	void RemoveHero(int ID) {
-		Heroes.erase(Heroes.begin() + ID);
-	}
-};
-
-
- 
-
-
-//class TeamPart {
-//public:
-//	TeamPart() {
-//		//Creator();
-//	};
-//	void Creator() {
-//		vector<TeamPart*> team;
-//		shuffle(begin(Heroes), end(Heroes), rng);
-//		for (int i = 0; i < 10; i++) {
-//			team.push_back(Players[i]);
-//		}
-//		for (int j = 0; j < 10;j++) {
-//			team.push_back(Heroes[j]);
-//		}
-//	}
-//	Player player;
-//	Hero hero;
-//};
-
-
-
-void PrintInfo() {
-
+void clearScreen(int characterLength) {
+    for (int i = 0; i < characterLength; i++) {
+        cout << "\b";
+    }
 }
 
+void changeColour(int colour) {
+    HANDLE hConsole;
 
+    hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, colour);
+}
 
-class TeamPart:Player,Hero {
-public:
-	TeamPart(Player player, Hero hero) {
-		this-> hero = hero;
-		this-> player = player;
-	}
-	Player player;
-	Hero hero;
-};
+void showLoadingScreen() {
+    int i;
+    string closed = "- - -", open = "* * *";
+    int colour[] = { RED, GREEN, BLUE };
 
+    cout << closed;
 
-class Session {
-public:
-	vector<TeamPart*> Lobby;
-	Session() {
-	};
-	vector<TeamPart*> TeamRed;
-	vector<TeamPart*> TeamBlue;
-	/*void Queue(vector<Player>& Players, vector<Hero>& Heroes) {
-		shuffle(begin(Heroes), end(Heroes), rng);
-		for (int i = 0;i < 5;i++) {
-			Player player = Players[i];
-			Hero hero = Heroes[i];
-			TeamPart* NewPlayer = new TeamPart(player, hero);
-			Lobby.push_back(NewPlayer);
-		};
-	};*/
-	void TeamCreator(vector<Player>& Players, vector<Hero>& Heroes) {
+    for (i = 0; i < 3; i++) {
+        Sleep(1000);
 
-		int i=0;
-		shuffle(begin(Heroes), end(Heroes), rng);
-		while (1) {
+        clearScreen(5);
+        changeColour(colour[i]);
 
-			Player player = Players[i];
-			Hero hero = Heroes[i];
-			TeamPart* NewPlayer = new TeamPart(player, hero);
-			srand(time(0));
-			int CheckRed = 0;
-			int CheckBlue = 0;
-			for (int i = 0;i < 5;i++) {
-				Player player = Players[i];
-				Hero hero = Heroes[i];
-				TeamPart* NewPlayer = new TeamPart(player, hero);
-				TeamRed.push_back(NewPlayer);
-				CheckRed+=TeamRed[i]->player.rank;
-			
-			};
-			for (int i = 5;i < 10;i++) {
-				Player player = Players[i];
-				Hero hero = Heroes[i];
-				TeamPart* NewPlayer = new TeamPart(player, hero);
-				TeamBlue.push_back(NewPlayer);
-				CheckBlue += TeamBlue[i]->player.rank;
-			};
-			if(CheckBlue<CheckBlue)
-			i++;
-		}
-	}
-};
+        cout << open;
+
+        Sleep(1000);
+
+        clearScreen(5);
+        changeColour(WHITE);
+
+        cout << closed;
+    }
+
+    clearScreen(5);
+    changeColour(WHITE);
+}
+
+void PerformGame(int num,int check) {
+    SManager game;
+    PManager player;
+    HManager hero;
+    player.PlayerCreator();
+    hero.HeroesCreator();
+    switch (check)
+    {
+    case 1:
+        game.PerformSession(player.Players, hero.Heroes, num);
+        break;
+    case 2:
+        player.AddPlayer();
+        break;
+    case 3:
+        hero.AddHero();
+        break;
+    default:
+        break;
+    }
+    
+}
+
+bool menu() {
+    cout << "Hello!" << endl;
+    cout << "what do you want?"<<endl;
+    cout<<"1. play\n2. create new player\n3. create new hero\n4. quit"<<endl;
+    int switch_on;
+    cin >> switch_on;
+    bool quit = 0;
+    switch (switch_on)
+    {
+    case 1:
+        cout << "how much games?\n";
+        int i;
+        cin >> i;
+        PerformGame(i,1);
+        break;
+    case 2:
+        PerformGame(0, 2);
+        break;
+    case 3:
+        PerformGame(0, 3);
+        break;
+    case 4:
+        quit = 1;
+        break;
+    default:
+        break;
+    }
+    return quit;
+}
 
 int main()
 {
-	PlaySound(TEXT("C:\\Users\\LAPTOP\\Documents\\GIT\\Doka2-trade\\Doka\\Sound.wav"), NULL, SND_ASYNC);
-	cout << "Hello World!\n";	
-	cout << endl;
-	system("pause");	
+    showLoadingScreen();
+    PlaySound(TEXT("../drown.wav"), NULL, SND_ASYNC);
+    while (1) {
+        bool quit = menu();
+        if (quit == 1)break;
+    }
+    cout << "Hello World!\n";	
+    cout << endl;
+    system("pause");	
 }
