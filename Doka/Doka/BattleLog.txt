@@ -1,0 +1,361 @@
+blue Player	blue Hero
+   Misha rank 10000	Lich King
+   Yana rank 10000	loli
+   Onhii rank 10000	Yuriu
+   Vasul rank 10000	Unreal Engine
+   Valera rank 10000	Unity
+red Player 	 red Hero
+   Ivan rank 10000	Furry
+   Jack rank 10000	kek
+   Petro rank 10000	Arthas
+   Yuriu rank 10000	maeve
+   John rank 10000	neko
+info:
+Blue dmg: 2063
+Red dmg: 2042
+winner! - Blue won
+finished Battle at Thu Jan 16 11:25:09 2020
+
+-------------
+blue Player	blue Hero
+   Valera rank 9975	Unreal Engine
+   Petro rank 10025	Unity
+   John rank 10025	loli
+   Ivan rank 10025	Lich King
+   Yuriu rank 10025	kek
+red Player 	 red Hero
+   Vasul rank 9975	Furry
+   Yana rank 9975	maeve
+   Onhii rank 9975	Yuriu
+   Misha rank 9975	Arthas
+   Jack rank 10025	neko
+info:
+Blue dmg: 2641
+Red dmg: 1464
+winner! - Blue won
+finished Battle at Thu Jan 16 11:25:09 2020
+
+-------------
+blue Player	blue Hero
+   John rank 10000	Furry
+   Yuriu rank 10000	Yuriu
+   Jack rank 10050	kek
+   Ivan rank 10000	neko
+   Vasul rank 10000	loli
+red Player 	 red Hero
+   Onhii rank 10000	Unreal Engine
+   Petro rank 10000	maeve
+   Valera rank 9950	Unity
+   Yana rank 10000	Lich King
+   Misha rank 10000	Arthas
+info:
+Blue dmg: 1411
+Red dmg: 2694
+winner! - Red won
+finished Battle at Thu Jan 16 11:25:09 2020
+
+-------------
+blue Player	blue Hero
+   Yana rank 10000	maeve
+   Yuriu rank 10000	Unreal Engine
+   Valera rank 10000	Lich King
+   Vasul rank 10000	Arthas
+   Misha rank 10000	Unity
+red Player 	 red Hero
+   Onhii rank 10000	loli
+   Ivan rank 10000	kek
+   John rank 10000	Furry
+   Petro rank 10000	Yuriu
+   Jack rank 10000	neko
+info:
+Blue dmg: 2694
+Red dmg: 1411
+winner! - Blue won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   Onhii rank 10025	Unreal Engine
+   Petro rank 10025	maeve
+   Valera rank 9975	Arthas
+   Yuriu rank 9975	Unity
+   Misha rank 9975	Furry
+red Player 	 red Hero
+   Vasul rank 9975	loli
+   Jack rank 10025	neko
+   Ivan rank 10025	kek
+   Yana rank 9975	Yuriu
+   John rank 10025	Lich King
+info:
+Blue dmg: 2553
+Red dmg: 1552
+winner! - Red won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   John rank 10000	kek
+   Onhii rank 10050	Arthas
+   Vasul rank 9950	Lich King
+   Misha rank 10000	Unity
+   Ivan rank 10000	maeve
+red Player 	 red Hero
+   Jack rank 10000	Furry
+   Yana rank 9950	neko
+   Yuriu rank 10000	Yuriu
+   Petro rank 10050	Unreal Engine
+   Valera rank 10000	loli
+info:
+Blue dmg: 2151
+Red dmg: 1954
+winner! - Blue won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   Yuriu rank 10025	Arthas
+   Valera rank 10025	kek
+   Jack rank 10025	Furry
+   Petro rank 10075	Unreal Engine
+   Ivan rank 9975	neko
+red Player 	 red Hero
+   Misha rank 9975	Unity
+   John rank 9975	Yuriu
+   Yana rank 9975	maeve
+   Vasul rank 9925	loli
+   Onhii rank 10025	Lich King
+info:
+Blue dmg: 2075
+Red dmg: 2030
+winner! - Red won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   Onhii rank 10000	Arthas
+   Vasul rank 9900	loli
+   Valera rank 10050	maeve
+   Yana rank 9950	neko
+   Misha rank 9950	Unity
+red Player 	 red Hero
+   Ivan rank 10000	Lich King
+   John rank 9950	Yuriu
+   Jack rank 10050	kek
+   Yuriu rank 10050	Unreal Engine
+   Petro rank 10100	Furry
+info:
+Blue dmg: 2176
+Red dmg: 1929
+winner! - Red won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   Ivan rank 9975	Unity
+   Onhii rank 10025	Unreal Engine
+   Vasul rank 9925	neko
+   Yana rank 9975	Arthas
+   Yuriu rank 10025	Furry
+red Player 	 red Hero
+   Jack rank 10025	kek
+   Misha rank 9975	maeve
+   Petro rank 10075	Lich King
+   Valera rank 10075	loli
+   John rank 9925	Yuriu
+info:
+Blue dmg: 2609
+Red dmg: 1496
+winner! - Red won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   Ivan rank 10000	Unity
+   Onhii rank 10050	kek
+   Yuriu rank 10050	maeve
+   John rank 9900	Lich King
+   Jack rank 10000	Arthas
+red Player 	 red Hero
+   Valera rank 10050	Unreal Engine
+   Yana rank 10000	neko
+   Petro rank 10050	Yuriu
+   Misha rank 9950	Furry
+   Vasul rank 9950	loli
+info:
+Blue dmg: 2151
+Red dmg: 1954
+winner! - Blue won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   Jack rank 9975	Unity
+   Yuriu rank 10025	neko
+   Petro rank 10075	Furry
+   Misha rank 9975	Arthas
+   Onhii rank 10025	Yuriu
+red Player 	 red Hero
+   John rank 9875	maeve
+   Ivan rank 9975	loli
+   Vasul rank 9975	kek
+   Valera rank 10075	Unreal Engine
+   Yana rank 10025	Lich King
+info:
+Blue dmg: 1488
+Red dmg: 2617
+winner! - Red won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   Ivan rank 9950	Furry
+   Misha rank 10000	Arthas
+   Valera rank 10050	neko
+   Yuriu rank 10050	Unity
+   Vasul rank 9950	Unreal Engine
+red Player 	 red Hero
+   Jack rank 10000	kek
+   Petro rank 10100	loli
+   Onhii rank 10050	Lich King
+   John rank 9850	Yuriu
+   Yana rank 10000	maeve
+info:
+Blue dmg: 2609
+Red dmg: 1496
+winner! - Red won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   John rank 9825	Unity
+   Petro rank 10075	Furry
+   Yuriu rank 10075	Lich King
+   Valera rank 10075	neko
+   Yana rank 9975	Arthas
+red Player 	 red Hero
+   Vasul rank 9975	loli
+   Onhii rank 10025	Unreal Engine
+   Ivan rank 9975	kek
+   Jack rank 9975	maeve
+   Misha rank 10025	Yuriu
+info:
+Blue dmg: 2731
+Red dmg: 1374
+winner! - Red won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   Onhii rank 10000	Lich King
+   Ivan rank 9950	Arthas
+   Misha rank 10000	Unreal Engine
+   Valera rank 10100	neko
+   Vasul rank 9950	loli
+red Player 	 red Hero
+   Petro rank 10100	Furry
+   Yana rank 10000	kek
+   Jack rank 9950	Unity
+   Yuriu rank 10100	maeve
+   John rank 9850	Yuriu
+info:
+Blue dmg: 2340
+Red dmg: 1765
+winner! - Blue won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   Petro rank 10125	Lich King
+   Jack rank 9975	Furry
+   Ivan rank 9925	kek
+   Valera rank 10075	Arthas
+   Vasul rank 9925	neko
+red Player 	 red Hero
+   Yuriu rank 10125	Yuriu
+   Yana rank 10025	Unity
+   Onhii rank 9975	loli
+   Misha rank 9975	maeve
+   John rank 9875	Unreal Engine
+info:
+Blue dmg: 2197
+Red dmg: 1908
+winner! - Red won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   Valera rank 10100	Lich King
+   John rank 9850	Unity
+   Misha rank 9950	Unreal Engine
+   Onhii rank 9950	neko
+   Petro rank 10150	loli
+red Player 	 red Hero
+   Jack rank 10000	Yuriu
+   Yuriu rank 10100	Arthas
+   Vasul rank 9950	Furry
+   Yana rank 10000	maeve
+   Ivan rank 9950	kek
+info:
+Blue dmg: 3207
+Red dmg: 898
+winner! - Tie
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   Vasul rank 9950	loli
+   Jack rank 10000	kek
+   Petro rank 10150	Unity
+   Ivan rank 9950	neko
+   John rank 9850	Yuriu
+red Player 	 red Hero
+   Valera rank 10100	maeve
+   Onhii rank 9950	Furry
+   Yuriu rank 10100	Arthas
+   Misha rank 9950	Lich King
+   Yana rank 10000	Unreal Engine
+info:
+Blue dmg: 1421
+Red dmg: 2684
+winner! - Tie
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   Yana rank 10000	Yuriu
+   Ivan rank 9950	maeve
+   Petro rank 10150	Lich King
+   Misha rank 9950	loli
+   John rank 9850	kek
+red Player 	 red Hero
+   Jack rank 10000	neko
+   Onhii rank 9950	Unity
+   Vasul rank 9950	Unreal Engine
+   Yuriu rank 10100	Arthas
+   Valera rank 10100	Furry
+info:
+Blue dmg: 1496
+Red dmg: 2609
+winner! - Blue won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
+blue Player	blue Hero
+   Yana rank 9975	Unity
+   Onhii rank 9975	Yuriu
+   Valera rank 10125	Arthas
+   John rank 9825	Lich King
+   Vasul rank 9975	kek
+red Player 	 red Hero
+   Jack rank 10025	loli
+   Ivan rank 9925	Furry
+   Misha rank 9925	neko
+   Petro rank 10125	maeve
+   Yuriu rank 10125	Unreal Engine
+info:
+Blue dmg: 1063
+Red dmg: 3042
+winner! - Blue won
+finished Battle at Thu Jan 16 11:25:43 2020
+
+-------------
